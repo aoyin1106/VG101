@@ -52,57 +52,29 @@ Notes:
 
 
 
-
-
-
-
-
 Ex.4 - Mathematical functions, loops, and recursion
 
-
-
 (1)Iteration
-
 Input format:
-
     A function, an interval, a precision
-
 Output format:
-
     A root of the function which satisfies the precision in the interval.
 
-
-
 Example input:
-
     X0 = Ex4_Iteration(@(x)x^2+2*x-1,[0 1],6)
-
 Example output:
-
     X0 = 0.414214
 
-
-
 (2)Recursion
-
 Input format:
-
     A function, an interval, a precision
-
 Output format:
-
     A root of the function which satisfies the precision in the interval.
 
-
-
 Example input:
-
     X0 = Ex4_Iteration(@(x)x^2+2*x-2,[0 1],5)
-
 Example output:
-
     X0 = 0.73205
-
 
 
 
@@ -129,22 +101,12 @@ Notes:
 
 Ex.6 - Basics on functions
 
-
-
 Input format:
-
     Day of the month, month, century year
-
 Output format:
-
     Day of the week
 
-
-
 Example input:
-
     Day = Ex6_zeller(30,5,2018)
-
 Example output:
-
     Day = 'Wednesday'
