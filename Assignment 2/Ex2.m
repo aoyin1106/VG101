@@ -6,7 +6,7 @@ while true
     num1 = squares(n);
     if (isprime(n)) && (rem(n, 4) == 1) && (num1 ~= 0)
         fprintf('Pythagorean prime: %d = %d ^ 2 + %d ^ 2 \n', n, num1, sqrt(n - num1 ^2));
-        break
+        break;
     else
         n = n + 1;
     end
