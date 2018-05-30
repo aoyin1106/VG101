@@ -43,38 +43,66 @@ Output format:
     A string which read n as proper numbers in english word
 
 Example input:
-    ex3_recursion(100345012,1)
+    x = ex3_recursion(100345012,1)
 Example output:
-    one hundred million  three hundred and forty five thousand and twelve
+    x = 'one hundred million  three hundred and forty five thousand and twelve'
 
 Notes:
     I firstly wrote a code without using recursion, which is also uploaded and is named as 'ex3_nonrec' .
 
 
 
+
+
+
+
+
 Ex.4 - Mathematical functions, loops, and recursion
 
+
+
 (1)Iteration
+
 Input format:
+
     A function, an interval, a precision
+
 Output format:
+
     A root of the function which satisfies the precision in the interval.
 
+
+
 Example input:
+
     X0 = Ex4_Iteration(@(x)x^2+2*x-1,[0 1],6)
+
 Example output:
+
     X0 = 0.414214
 
+
+
 (2)Recursion
+
 Input format:
+
     A function, an interval, a precision
+
 Output format:
+
     A root of the function which satisfies the precision in the interval.
 
+
+
 Example input:
+
     X0 = Ex4_Iteration(@(x)x^2+2*x-2,[0 1],5)
+
 Example output:
+
     X0 = 0.73205
+
 
 
 
@@ -83,18 +111,16 @@ Ex.5 - Control statements
 Input format:
     A positive integer
 Output format:
-    The next Armstrong number or n (if n is an Armstrong number)
+    The next Armstrong number or n (if n is an Armstrong number). If the input is equal or less than 0, the function will return 0.
 
-Example input:
-    150
-Example output:
-    153
-
-Example input:
-    153
-Example output:
-    153
-    this number is an Armstrong number
+Example input 1:
+    x = Ex5(150)
+Example output 1:
+    x = 153
+Example input 2:
+    x = Ex5(-1)
+Example output 2:
+    x = 0
 
 Notes:
     An Armstrong number is a number whose sum of the power of the number of digits in n of each of its digits is n itself.
@@ -103,12 +129,22 @@ Notes:
 
 Ex.6 - Basics on functions
 
+
+
 Input format:
+
     Day of the month, month, century year
+
 Output format:
+
     Day of the week
 
+
+
 Example input:
+
     Day = Ex6_zeller(30,5,2018)
+
 Example output:
+
     Day = 'Wednesday'
