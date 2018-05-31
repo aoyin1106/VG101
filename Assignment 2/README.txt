@@ -5,7 +5,7 @@ Input format:
     If you input any strange things that is not integer like '2x' or '201.8', the program will print an error message and prompt the user to input again.
 
 Output format:
-    A string. 'Leap year.' or 'Regular year.' or 'The input format is wrong. Please enter again: '
+    A string. 'Leap year.' or 'Regular year.' or 'The input format is wrong. Please enter again: '.
 
 Example input 1:
     2018
@@ -38,9 +38,9 @@ Notes:
 Ex.3 - Recursion
 
 Input format:
-    A positive integer n which is not bigger than 999,999,999 and a step=1 for the recursion function
+    A positive integer n which is not bigger than 999,999,999 and a step=1 for the recursion function.
 Output format:
-    A string which read n as proper numbers in english word
+    A string which read n as proper numbers in english word.
 
 Example input:
     x = ex3_recursion(100345012,1)
@@ -56,7 +56,7 @@ Ex.4 - Mathematical functions, loops, and recursion
 
 (1)Iteration
 Input format:
-    A function, an interval, a precision
+    A function, an interval, a precision.
 Output format:
     A root of the function which satisfies the precision in the interval.
 
@@ -67,7 +67,7 @@ Example output:
 
 (2)Recursion
 Input format:
-    A function, an interval, a precision
+    A function, an interval, a precision.
 Output format:
     A root of the function which satisfies the precision in the interval.
 
@@ -81,7 +81,7 @@ Example output:
 Ex.5 - Control statements
 
 Input format:
-    A positive integer
+    A positive integer.
 Output format:
     The next Armstrong number or n (if n is an Armstrong number). If the input is equal or less than 0, the function will return 0.
 
@@ -102,9 +102,9 @@ Notes:
 Ex.6 - Basics on functions
 
 Input format:
-    Day of the month, month, century year
+    Day of the month, month, century year.
 Output format:
-    Day of the week
+    Day of the week.
 
 Example input:
     Day = Ex6_zeller(30,5,2018)
