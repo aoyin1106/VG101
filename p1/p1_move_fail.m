@@ -1,8 +1,7 @@
-function p1_move(n, w, g, o, r, p, car)
+function p1_move(n, w, g, o, r, car)
     time = 0;
     timecycle = g + o + r + o;
     l = 6 * w;
-    p = (p / w) ^ 2;
     
     while (p1_crash(car, w) == 0)
         clf;
@@ -26,15 +25,13 @@ function p1_move(n, w, g, o, r, p, car)
         
         car_temp = car;
         for i = 1 : n
-            ran = rand(1);
             if (car(i).x >= -w) && (car(i).x <= w) && (car(i).y >= -w) && (car(i).y <= w)
                 if car(i).lane == 1
-                    car(i).x = car(i).x - 1;
-                    if (car(i).brklaw == 1) && (ran <= p)
-                        ran = 0;
-                    elseif (p1_crash(car, w) == 1)
+                    car(i).x = car(i).x - 2;
+                    if p1_crash(car, w) == 1
                         car(i).x = car(i).x + 1;
                     end
+                    car(i).x = car(i).x + 1;
                     if (car(i).turn == 1) && (car(i).x == w/2)
                         car(i).lane = 4;
                     elseif (car(i).turn == -1) && (car(i).x == -w/2)
@@ -42,12 +39,11 @@ function p1_move(n, w, g, o, r, p, car)
                         car(i).turn = 0;
                     end
                 elseif car(i).lane == 2
-                    car(i).y = car(i).y - 1;
-                    if (car(i).brklaw == 1) && (ran <= p)
-                        ran = 0;
-                    elseif (p1_crash(car, w) == 1)
+                    car(i).y = car(i).y - 2;
+                    if p1_crash(car, w) == 1
                         car(i).y = car(i).y + 1;
                     end
+                    car(i).y = car(i).y + 1;
                     if (car(i).turn == 1) && (car(i).y == w/2)
                         car(i).lane = 1;
                     elseif (car(i).turn == -1) && (car(i).y == -w/2)
@@ -55,12 +51,11 @@ function p1_move(n, w, g, o, r, p, car)
                         car(i).turn = 0;
                     end
                 elseif car(i).lane == 3
-                    car(i).x = car(i).x + 1;
-                    if (car(i).brklaw == 1) && (ran <= p)
-                        ran = 0;
-                    elseif (p1_crash(car, w) == 1)
+                    car(i).x = car(i).x + 2;
+                    if p1_crash(car, w) == 1
                         car(i).x = car(i).x - 1;
                     end
+                    car(i).x = car(i).x - 1;
                     if (car(i).turn == 1) && (car(i).x == -w/2) 
                         car(i).lane = 2;
                     end
@@ -69,12 +64,11 @@ function p1_move(n, w, g, o, r, p, car)
                         car(i).turn = 0;
                     end
                 elseif car(i).lane == 4
-                    car(i).y = car(i).y + 1;
-                    if (car(i).brklaw == 1) && (ran <= p)
-                        ran = 0;
-                    elseif (p1_crash(car, w) == 1)
+                    car(i).y = car(i).y + 2;
+                    if p1_crash(car, w) == 1
                         car(i).y = car(i).y - 1;
                     end
+                    car(i).y = car(i).y - 1;
                     if (car(i).turn == 1) && (car(i).y == -w/2)
                         car(i).lane = 3;
                     elseif (car(i).turn == -1) && (car(i).y == w/2)
@@ -85,79 +79,91 @@ function p1_move(n, w, g, o, r, p, car)
                 
             elseif status == 1
                 if car(i).lane == 1
-                    car(i).x = car(i).x - 1;
+                    car(i).x = car(i).x - 2;
                     if p1_crash(car, w) == 1
                         car(i).x = car(i).x + 1;
                     end
+                    car(i).x = car(i).x + 1;
                 elseif car(i).lane == 2
                     if car(i).brklaw == 0
                         temp = min([1, abs(car(i).y - 1.5*w)]);
-                        car(i).y = car(i).y - temp;
-                        if p1_crash(car, w) == 1
-                            car(i).y = car(i).y + temp;
-                        end
-                    else
-                        car(i).y = car(i).y - 1;
+                        car(i).y = car(i).y - temp - 1;
                         if p1_crash(car, w) == 1
                             car(i).y = car(i).y + 1;
                         end
+                        car(i).y = car(i).y + temp;
+                    else
+                        car(i).y = car(i).y - 2;
+                        if p1_crash(car, w) == 1
+                            car(i).y = car(i).y + 1;
+                        end
+                        car(i).y = car(i).y + 1;
                     end
                 elseif car(i).lane == 3
-                    car(i).x = car(i).x + 1;
+                    car(i).x = car(i).x + 2;
                     if p1_crash(car, w) == 1
                         car(i).x = car(i).x - 1;
                     end
+                    car(i).x = car(i).x - 1;
                 elseif car(i).lane == 4
                     if car(i).brklaw == 0
                         temp = min([1, abs(-car(i).y - 1.5*w)]);
-                        car(i).y = car(i).y + temp;
-                        if p1_crash(car, w) == 1
-                            car(i).y = car(i).y - temp;
-                        end
-                    else
-                        car(i).y = car(i).y + 1;
+                        car(i).y = car(i).y + temp + 1;
                         if p1_crash(car, w) == 1
                             car(i).y = car(i).y - 1;
                         end
+                        car(i).y = car(i).y - temp;
+                    else
+                        car(i).y = car(i).y + 2;
+                        if p1_crash(car, w) == 1
+                            car(i).y = car(i).y - 1;
+                        end
+                        car(i).y = car(i).y - 1;
                     end
                 end
                 
             elseif status == 3
                 if car(i).lane == 2
-                    car(i).y = car(i).y - 1;
+                    car(i).y = car(i).y - 2;
                     if p1_crash(car, w) == 1
                         car(i).y = car(i).y + 1;
                     end
+                    car(i).y = car(i).y + 1;
                 elseif car(i).lane == 1
                     if car(i).brklaw == 0
                         temp = min([1, abs(car(i).x - 1.5*w)]);
-                        car(i).x = car(i).x - temp;
-                        if p1_crash(car, w) == 1
-                            car(i).x = car(i).x + temp;
-                        end
-                    else
-                        car(i).x = car(i).x - 1;
+                        car(i).x = car(i).x - temp - 1;
                         if p1_crash(car, w) == 1
                             car(i).x = car(i).x + 1;
                         end
+                        car(i).x = car(i).x + temp;
+                    else
+                        car(i).x = car(i).x - 2;
+                        if p1_crash(car, w) == 1
+                            car(i).x = car(i).x + 1;
+                        end
+                        car(i).x = car(i).x + 1;
                     end
                 elseif car(i).lane == 4
-                    car(i).y = car(i).y + 1;
+                    car(i).y = car(i).y + 2;
                     if p1_crash(car, w) == 1
                         car(i).y = car(i).y - 1;
                     end
+                    car(i).y = car(i).y - 1;
                 elseif car(i).lane == 3
                     if car(i).brklaw == 0
                         temp = min([1, abs(-car(i).x - 1.5*w)]);
-                        car(i).x = car(i).x + temp;
-                        if p1_crash(car, w) == 1
-                            car(i).x = car(i).x - temp;
-                        end
-                    else
-                        car(i).x = car(i).x + 1;
+                        car(i).x = car(i).x + temp + 1;
                         if p1_crash(car, w) == 1
                             car(i).x = car(i).x - 1;
                         end
+                        car(i).x = car(i).x - temp;
+                    else
+                        car(i).x = car(i).x + 2;
+                        if p1_crash(car, w) == 1
+                            car(i).x = car(i).x - 1;
+                        end
+                        car(i).x = car(i).x - 1;
                     end
                 end
                 
@@ -165,54 +171,62 @@ function p1_move(n, w, g, o, r, p, car)
                 if car(i).lane == 1
                     if car(i).brklaw == 0
                         temp = min([1, abs(car(i).x - 1.5*w)]);
-                        car(i).x = car(i).x - temp;
-                        if p1_crash(car, w) == 1
-                            car(i).x = car(i).x + temp;
-                        end
-                    else
-                        car(i).x = car(i).x - 1;
+                        car(i).x = car(i).x - temp - 1;
                         if p1_crash(car, w) == 1
                             car(i).x = car(i).x + 1;
                         end
+                        car(i).x = car(i).x + temp;
+                    else
+                        car(i).x = car(i).x - 2;
+                        if p1_crash(car, w) == 1
+                            car(i).x = car(i).x + 1;
+                        end
+                        car(i).x = car(i).x + 1;
                     end
                 elseif car(i).lane == 2
                     if car(i).brklaw == 0
                         temp = min([1, abs(car(i).y - 1.5*w)]);
-                        car(i).y = car(i).y - temp;
-                        if p1_crash(car, w) == 1
-                            car(i).y = car(i).y + temp;
-                        end
-                    else
-                        car(i).y = car(i).y - 1;
+                        car(i).y = car(i).y - temp - 1;
                         if p1_crash(car, w) == 1
                             car(i).y = car(i).y + 1;
                         end
+                        car(i).y = car(i).y + temp;
+                    else
+                        car(i).y = car(i).y - 2;
+                        if p1_crash(car, w) == 1
+                            car(i).y = car(i).y + 1;
+                        end
+                        car(i).y = car(i).y + 1;
                     end
                 elseif car(i).lane == 3
                     if car(i).brklaw == 0
                         temp = min([1, abs(-car(i).x - 1.5*w)]);
-                        car(i).x = car(i).x + temp;
-                        if p1_crash(car, w) == 1
-                            car(i).x = car(i).x - temp;
-                        end
-                    else
-                        car(i).x = car(i).x + 1;
+                        car(i).x = car(i).x + temp + 1;
                         if p1_crash(car, w) == 1
                             car(i).x = car(i).x - 1;
                         end
+                        car(i).x = car(i).x - temp;
+                    else
+                        car(i).x = car(i).x + 2;
+                        if p1_crash(car, w) == 1
+                            car(i).x = car(i).x - 1;
+                        end
+                        car(i).x = car(i).x - 1;
                     end
                 elseif car(i).lane == 4
                     if car(i).brklaw == 0
                         temp = min([1, abs(-car(i).y - 1.5*w)]);
-                        car(i).y = car(i).y + temp;
-                        if p1_crash(car, w) == 1
-                            car(i).y = car(i).y - temp;
-                        end
-                    else
-                        car(i).y = car(i).y + 1;
+                        car(i).y = car(i).y + temp + 1;
                         if p1_crash(car, w) == 1
                             car(i).y = car(i).y - 1;
                         end
+                        car(i).y = car(i).y - temp;
+                    else
+                        car(i).y = car(i).y + 2;
+                        if p1_crash(car, w) == 1
+                            car(i).y = car(i).y - 1;
+                        end
+                        car(i).y = car(i).y - 1;
                     end
                 end
             end

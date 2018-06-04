@@ -1,4 +1,4 @@
-function p1_move(n, w, g, o, r, car)
+function p1_move(n, w, g, o, r, p, car)
     time = 0;
     timecycle = g + o + r + o;
     l = 6 * w;
@@ -24,6 +24,7 @@ function p1_move(n, w, g, o, r, car)
         end
         
         car_temp = car;
+        rand
         for i = 1 : n
             if (car(i).x >= -w) && (car(i).x <= w) && (car(i).y >= -w) && (car(i).y <= w)
                 if car(i).lane == 1
@@ -208,9 +209,9 @@ function p1_move(n, w, g, o, r, car)
             end
             p1_displaycar(car, i);
         end
-        if p1_finish == 1
-            break;
-        end
+%         if p1_finish == 1
+%             break;
+%         end
         pause(1);
     end
 end
