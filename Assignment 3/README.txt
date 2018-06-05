@@ -23,6 +23,13 @@ Example output:
 
 
 
+Ex.4 - Ploting
+
+Output:
+    An image including a pretty house and a red Volkswagen Beetle car.
+
+
+
 Ex.6 - Input and output
 
 Input format:
