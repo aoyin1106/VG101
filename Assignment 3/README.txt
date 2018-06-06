@@ -55,3 +55,6 @@ Example input:
     Ex6(6)
 Example output:
     See 'Ex6_Output.txt'.
+
+Bugs:
+    The maximum length for all the figures should be equal to or less than 7. If the length is equal to or greater than 8, the program cannot handle it, and the output txt file can be unreadable.
