@@ -30,6 +30,20 @@ Output:
 
 
 
+Ex.5 - Algorithm, function, conditional statements, and loops
+
+Input format:
+    a function(f), an interval(a,b),error(error)
+Output format:
+    'the root is xxx'
+    
+Example input:
+    Ex5(@(x)x^2+2*x-5,1,2,0.001)
+Example output:
+    the root is 1.449463
+    
+
+
 Ex.6 - Input and output
 
 Input format:
