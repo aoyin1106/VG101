@@ -4,7 +4,7 @@ function Ex6(n)
         for j = 1 : n - i
             fprintf(f1,'    ');
         end
-        tmp = diag(rot90(pascal(i)));
+        tmp = diag(rot90(pascal(i)));   %Generate the ith line of pascal triangle
         for j = 1 : i
             fprintf(f1,'%8d', tmp(j));
         end

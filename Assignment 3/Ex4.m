@@ -7,10 +7,12 @@ plot([-1,-1],[0,5],'k','LineWidth',3);
 plot([-10,-5.5],[5,8],'k','LineWidth',3);
 plot([-1,-5.5],[5,8],'k','LineWidth',3);
 
+%door
 plot([-2,-2],[0,4],'b','LineWidth',2);
 plot([-4,-4],[0,4],'b','LineWidth',2);
 plot([-2,-4],[4,4],'b','LineWidth',2);
 
+%window
 plot([-9,-6],[4,4],'y','LineWidth',2);
 plot([-9,-6],[2.5,2.5],'y','LineWidth',1.5);
 plot([-9,-6],[1,1],'y','LineWidth',2);
