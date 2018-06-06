@@ -1,4 +1,0 @@
-%[n, w, p, t, g, o, r] = p1_input;
-n = 10; w = 1
-car = p1_initialize(10, 2, 0.3, 0.4);
-p1_move(n, w, g, o, r, car)
