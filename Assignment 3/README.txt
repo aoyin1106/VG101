@@ -1,3 +1,15 @@
+VG101 Assignment3
+
+Last Edited Date: 2018/6/7
+
+Contributers:
+    Shi Li 	517370910032
+    Wang Tianyi	517370910160
+    Liu Zhiyuan 51731091240
+    Yuan Yin 	517370910260
+
+
+
 Ex.1 - Accurate calculations
 
 Output:
@@ -6,6 +18,14 @@ Output:
 Notes:
     We use the formula 2^0+2^1+...+2^63=2^64-1.
     Also, we can also use the function 'sym' in MATLAB, which was introduced by the strongest LYH in Monday's lab. sym(2^64-1)=18446744073709551615.
+
+
+
+Ex.2 - Algorithm
+    The matlab structure uses ¡°struct¡±in matlab and creates a table to summarize the wardrobe
+    inventory having three indexes: Type, Color and Quantity. By comparing the quantity using ¡°max¡±
+    matlab can output which item (Type+Color) has the largest quantity.It can also calculate out the 
+    average years of these items.
 
 
 
