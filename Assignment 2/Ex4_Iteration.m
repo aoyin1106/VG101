@@ -4,7 +4,7 @@ function x0 = Ex4_Iteration(f,interval,p)
     r = interval(2);   %right
 
     len = length(num2str(l));
-    if l>=0 & l<1
+    if l>=0 && l<1
         len = len-1;
     end
 

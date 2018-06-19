@@ -3,7 +3,7 @@ function x0 = Ex4_Recursion(f,interval,p)
     b = interval(2);
     
     len = length(num2str(floor(a)));
-    if a>=0 & a<1
+    if a>=0 && a<1
         len = len-1;
     end
     
