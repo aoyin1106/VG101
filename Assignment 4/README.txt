@@ -45,3 +45,77 @@ Example input:
     120 72
 Example output:
     24
+
+
+Ex. 3 ¡ª Use of the math library, conditional statements
+Input format:
+            three integers with a space separated triple a b c, standing for ax2 + bx + c
+Output format:
+            the solution of function ax2 + bx + c=0
+
+Example input:
+             1 -2 2
+Example output:
+	1.00000-1.00000i
+	1.00000+1.00000i
+Ex.4-Conditional statements
+
+
+Input format:
+	
+	character "v" or "d"
+	
+	# Vowel Test
+		
+	a character
+	
+	# Data type
+		
+	a number and a character
+
+Example input:
+	
+	v
+
+	a
+
+Or
+	d
+
+	8b
+
+Example output:
+	
+# Vowel Test
+		
+	a is a vowel!
+	
+# Data type
+		
+	1.000000 char
+		
+	0.250000 int
+		
+	0.250000 float
+		
+	0.125000 double
+
+Ex.5- Pre-processing,program structure,data size
+
+Input format:
+            two integers and another integer to choose the operation
+Output format:
+            operation name:answer
+
+Example input:
+             4 2 1
+Example output:
+             Quotient:2
+
+The size of input:
+                 we input integers,so the size of input is the size of integer.In my computer, it is
+four bytes. Two integers means eight bytes.
+
+The size of output:
+                 the inputs are two integers, and after operation, it is also an integer.By using sizeof
+we confirm that it is also four bytes.
