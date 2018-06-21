@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2018.1.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe" "-DCMAKE_C_COMPILER=C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe" -G "CodeBlocks - MinGW Makefiles" "D:\JI\2018SU\VG101\h4\Assignment 4"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/JI/2018SU/VG101/h4/Assignment 4/cmake-build-debug

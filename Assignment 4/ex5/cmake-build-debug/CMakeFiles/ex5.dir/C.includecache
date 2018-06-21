@@ -1,0 +1,60 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/main.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+sum.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/sum.h
+prod.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/prod.h
+rem.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/rem.h
+quo.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/quo.h
+prod.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/prod.h
+mpow.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/mpow.h
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/mpow.c
+mpow.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/mpow.h
+math.h
+-
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/mpow.h
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/prod.c
+prod.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/prod.h
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/prod.h
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/quo.c
+quo.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/quo.h
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/quo.h
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/rem.c
+rem.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/rem.h
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/rem.h
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/sum.c
+sum.h
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/sum.h
+
+D:/JI/2018SU/VG101/h4/Assignment 4/ex5/sum.h
+
