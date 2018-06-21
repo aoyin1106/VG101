@@ -18,7 +18,11 @@ int vowel(){
 int data(){
     double size;
     char type;
+<<<<<<< HEAD
     printf("input the size of data type: ");
+=======
+    printf("input a data type: ");
+>>>>>>> 39022916768838bf63131674a08e8fc9dbe6c3b3
     scanf("%lf %c",&size,&type);
     if (type == 'b')
     {

@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.7)
 
+<<<<<<< HEAD
 project(hwx C)
+=======
+project(hwx)
+>>>>>>> 39022916768838bf63131674a08e8fc9dbe6c3b3
 
 # Set the C standard to C11
 set(CMAKE_C_STANDARD 11)
