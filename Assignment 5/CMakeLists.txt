@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.10)
+project(h5 C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(ex1 ex1.c)
+add_executable(ex3 ex3.c)
+add_executable(ex4 ex4.c)
+add_executable(ex6 ex6.c)
+add_executable(ex6t ex6t.c)
