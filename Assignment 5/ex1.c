@@ -1,23 +1,44 @@
 #include <stdio.h>
-#define SIZE 1010000    //These two figures can be adjusted according to the data range.
-#define LOOP 1200
+#include <string.h>
+#define i 1010000
 
-int main()
-{
-    short a[SIZE] = {0};
-    int i,j;
-    //We use the algorithm of the sieve of eratosthenes.
-    for (i = 2; i < LOOP; i++)
-    {
-        if (a[i] == 0)
-            for (j = 2; j < SIZE / i; j++)
-                a[j * i] = -1;  //-1 means this number is not a prime number.
-    }
 
-    int n;
-    scanf("%d", &n);
-    for (i = 2; i < n; i++)
-        if (a[i] == 0)
-            printf("%d ", i);
-    printf("\n");
+int main() {
+
+    short a[i];
+
+    int n;//the input number
+
+   memset(a,0,sizeof(short)*i);
+
+   scanf("%d",&n);
+
+   int k;
+
+   int j;
+
+   for (k=2;k<=n;k++){
+
+   if (a[k]==0){
+
+       for (j=2;j<=n/k;j++){
+
+           a[j*k]=1;
+       }
+
+   }
+   else
+       continue;
+   }
+
+   for (k=2;k<n;k++){
+
+     if (a[k]==0)
+         printf("%d ",k);
+     else
+         continue;
+
+
+   }
+    return 0;
 }

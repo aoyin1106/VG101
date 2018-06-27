@@ -1,31 +1,40 @@
 #include <stdio.h>
+#include <string.h>
 
-int main() {
-    char sentence[10000], word[10000];
-    int  len1 = 0, len2 = 0;                    //len1: length of sentence; len2: length of word.
-    printf("Input a sentence: ");
-    gets(sentence);
-    for (;;len1++)
-        if (sentence[len1] == '\0')
-            break;
-    printf("Input a string: ");
-    gets(word);
-    for (;;len2++)
-        if (word[len2] == '\0')
-            break;
+    int findstring(char *a,char *b,char *c);
+    int main() {
+        char sentence[10000];
+        char string[10000];
+        int all;
+        printf("Input a sentence: ");
+        char* temp=fgets(sentence,10000,stdin);
+        if ('\n'==sentence[strlen(sentence)-1])
+            sentence[strlen(sentence)-1]='\0';
+        printf("Input a string: ");
+        char* temp1=fgets(string,10000,stdin);
+        if ('\n'==string[strlen(string)-1])
+            string[strlen(string)-1]='\0';
+        all=findstring(temp,temp1,&sentence[strlen(sentence)]);
+        printf("The string '%s' occurs %d times",string,all);
 
-    int i, j, flag, count = 0;
-    for (i = 0; i <= len1 - len2; i++)
-    {
-        flag = 1;
-        for (j = 0; j < len2; j++)              //Compare part of sentence and the word, char by char.
-            if (word[j] != sentence[i + j])
-            {
-                flag = 0;
-                break;
-            }
-        if (flag == 1)
-            count++;
+        return 0;
+
     }
-    printf("The string '%s' occurs %d times\n", word, count);
-}
+
+    int findstring(char *a,char *b,char* c) {
+        int total = 0;
+        char *check;
+        check = strstr(a, b);
+        if (check == NULL)
+            total=0;
+        else {
+            while (check != NULL) {
+                total = total + 1;
+                a = check + 1;
+                    check = strstr(a, b);
+
+            }
+
+        }
+        return total;
+    }
