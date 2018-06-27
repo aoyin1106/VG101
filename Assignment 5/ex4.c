@@ -11,7 +11,7 @@ int main()
     scanf("%lf %lf %lf %lf %lf", &v0, &angle, &h0, &range_min, &range_max);
     angle = angle / 180 * 3.1415926536;     //transform angle from degree into radian.
     double c = h0, b = tan(angle), a = -(9.81/(2.0 * v0 * v0 * cos(angle) * cos(angle)));
-                                    //simplify the function.
+                                            //simplify the function.
     double ans = solve(a,b,c,range_min,range_max);
     printf("%.6lf", ans);
     return 0;

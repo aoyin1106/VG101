@@ -1,0 +1,8 @@
+D:/JI/2018SU/VG101/GitHub/Assignment 5/cmake-build-debug/CMakeFiles/ex1.dir
+D:/JI/2018SU/VG101/GitHub/Assignment 5/cmake-build-debug/CMakeFiles/ex2.dir
+D:/JI/2018SU/VG101/GitHub/Assignment 5/cmake-build-debug/CMakeFiles/ex3.dir
+D:/JI/2018SU/VG101/GitHub/Assignment 5/cmake-build-debug/CMakeFiles/ex4.dir
+D:/JI/2018SU/VG101/GitHub/Assignment 5/cmake-build-debug/CMakeFiles/ex5.dir
+D:/JI/2018SU/VG101/GitHub/Assignment 5/cmake-build-debug/CMakeFiles/ex6.dir
+D:/JI/2018SU/VG101/GitHub/Assignment 5/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/JI/2018SU/VG101/GitHub/Assignment 5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
