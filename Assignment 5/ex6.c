@@ -32,7 +32,7 @@ int main () {
     #endif
 }
 
-int getDigit(unsigned int len, unsigned long int b)
+int getDigit(unsigned int len, unsigned long int b)                 //Use bisection algorithm to get the length of a binary number
 {
     if (len == 1)                                                   //The criteria for the recursion to exit.
         return 1;                                                   //If the length of binary number is 1, return 1
