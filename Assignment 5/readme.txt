@@ -22,6 +22,8 @@ Example output:
 
 Notes: use the algorithm of the sieve of eratosthenes.
 
+JOJ score:Accepted
+
 
 
 Ex.3 - Strings
@@ -35,6 +37,8 @@ Example input:
             aaa a
 Example output:
             3
+
+JOJ score:Accepted
 
 
 
