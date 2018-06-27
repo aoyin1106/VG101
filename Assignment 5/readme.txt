@@ -1,4 +1,4 @@
-Ex.1¡ªArray
+Ex.1-Array
 
 Input format:
               one line with one positive integer
