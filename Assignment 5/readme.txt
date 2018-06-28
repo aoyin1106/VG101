@@ -42,6 +42,22 @@ JOJ score:Accepted
 
 
 
+Ex.4 - Loops, standard library, mathematical functions
+
+Input format:
+            one line with a space separated list in the order v0 theta0 height range_min range_max
+Output format:
+            one line showing the result with 6 decimals
+
+Example input:
+            30 30 1.5 75 85
+Example output:
+            81.970131
+            
+JOJ score:Accepted
+
+
+
 Ex.6 - Low level C programming
 
 1. Karatsuba algorithm
