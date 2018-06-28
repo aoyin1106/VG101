@@ -25,6 +25,33 @@ Notes: use the algorithm of the sieve of eratosthenes.
 JOJ score:Accepted
 
 
+Ex.2 - Arrays and functions
+
+Input format:
+               one line with one integer and the three first letters of a day (e.g. 6 Fri)
+Output format: 
+	similar to the sample output below
+June
+Sun Mon Tue Wed Thu Fri Sat
+                     1   2
+ 3   4   5   6   7   8   9
+10  11  12  13  14  15  16
+17  18  19  20  21  22  23
+24  25  26  27  28  29  30
+
+Example input:
+              6 Fri
+Example output:
+June
+Sun Mon Tue Wed Thu Fri Sat
+                     1   2
+ 3   4   5   6   7   8   9
+10  11  12  13  14  15  16
+17  18  19  20  21  22  23
+24  25  26  27  28  29  30
+
+JOJ score:Accepted
+
 
 Ex.3 - Strings
 
@@ -58,6 +85,178 @@ JOJ score:Accepted
 
 
 
+Ex. 5 ¡ª Loop, array, and sorting
+
+Example output:
+First deck
+Figure  Suit
+  2     Spades
+  2     Hearts
+  2     Diamonds
+  2     Clubs
+  3     Spades
+  3     Hearts
+  3     Diamonds
+  3     Clubs
+  4     Spades
+  4     Hearts
+  4     Diamonds
+  4     Clubs
+  5     Spades
+  5     Hearts
+  5     Diamonds
+  5     Clubs
+  6     Spades
+  6     Hearts
+  6     Diamonds
+  6     Clubs
+  7     Spades
+  7     Hearts
+  7     Diamonds
+  7     Clubs
+  8     Spades
+  8     Hearts
+  8     Diamonds
+  8     Clubs
+  9     Spades
+  9     Hearts
+  9     Diamonds
+  9     Clubs
+  10    Spades
+  10    Hearts
+  10    Diamonds
+  10    Clubs
+  Jack  Spades
+  Jack  Hearts
+  Jack  Diamonds
+  Jack  Clubs
+  Queen Spades
+  Queen Hearts
+  Queen Diamonds
+  Queen Clubs
+  King  Spades
+  King  Hearts
+  King  Diamonds
+  King  Clubs
+  Ace   Spades
+  Ace   Hearts
+  Ace   Diamonds
+  Ace   Clubs
+
+
+
+Second deck
+Figure  Suit
+  6     Clubs
+  6     Spades
+  4     Hearts
+  2     Diamonds
+  10    Clubs
+  3     Clubs
+  King  Diamonds
+  8     Diamonds
+  3     Hearts
+  9     Diamonds
+  Jack  Clubs
+  4     Clubs
+  3     Diamonds
+  Jack  Diamonds
+  4     Spades
+  10    Diamonds
+  Jack  Hearts
+  5     Spades
+  5     Clubs
+  2     Spades
+  7     Spades
+  7     Hearts
+  10    Spades
+  King  Spades
+  Ace   Diamonds
+  5     Diamonds
+  Ace   Spades
+  7     Clubs
+  Queen Spades
+  Queen Clubs
+  6     Diamonds
+  Jack  Spades
+  Queen Hearts
+  8     Hearts
+  Queen Diamonds
+  2     Clubs
+  2     Hearts
+  8     Clubs
+  King  Hearts
+  Ace   Hearts
+  9     Clubs
+  7     Diamonds
+  8     Spades
+  9     Hearts
+  5     Hearts
+  10    Hearts
+  6     Hearts
+  4     Diamonds
+  3     Spades
+  King  Clubs
+  9     Spades
+  Ace   Clubs
+
+
+
+Third deck
+Figure  Suit
+  2     Spades
+  2     Hearts
+  2     Diamonds
+  2     Clubs
+  3     Spades
+  3     Hearts
+  3     Diamonds
+  3     Clubs
+  4     Spades
+  4     Hearts
+  4     Diamonds
+  4     Clubs
+  5     Spades
+  5     Hearts
+  5     Diamonds
+  5     Clubs
+  6     Spades
+  6     Hearts
+  6     Diamonds
+  6     Clubs
+  7     Spades
+  7     Hearts
+  7     Diamonds
+  7     Clubs
+  8     Spades
+  8     Hearts
+  8     Diamonds
+  8     Clubs
+  9     Spades
+  9     Hearts
+  9     Diamonds
+  9     Clubs
+  10    Spades
+  10    Hearts
+  10    Diamonds
+  10    Clubs
+  Jack  Spades
+  Jack  Hearts
+  Jack  Diamonds
+  Jack  Clubs
+  Queen Spades
+  Queen Hearts
+  Queen Diamonds
+  Queen Clubs
+  King  Spades
+  King  Hearts
+  King  Diamonds
+  King  Clubs
+  Ace   Spades
+  Ace   Hearts
+  Ace   Diamonds
+  Ace   Clubs
+
 Ex.6 - Low level C programming
 
 1. Karatsuba algorithm
@@ -78,4 +277,3 @@ Ex.6 - Low level C programming
 5. Optimize the code
     We replace the original loop with bisection algorithm to get the length of a binary number. The time complexity can be reduced from O(s) to O(log s), where s is sizeof(unsigned long int) = 64.
     Details have been included in the comments in ex6.c.
-
