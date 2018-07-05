@@ -72,7 +72,9 @@ void remElem(void *elem, uset *set){
       }
     }
     set->card=set->card-1;
-    resizeset(set);
+    if (set->card%64==0){
+      resizeset(set);
+    }
   case INT:
     int *buffer = (int*)set->elem;
     for (size_t i = 0; i < set->card; i++) {
@@ -81,7 +83,9 @@ void remElem(void *elem, uset *set){
       }
     }
     set->card=set->card-1;
-    resizeset(set);
+    if (set->card%64==0){
+      resizeset(set);
+    }
   case DOUBLE:
     double *buffer = (double*)set->elem;
     for (size_t i = 0; i < set->card; i++) {
@@ -90,6 +94,8 @@ void remElem(void *elem, uset *set){
       }
     }
     set->card=set->card-1;
-    resizeset(set);
+    if (set->card%64==0){
+      resizeset(set);
+    }
 }
 }
