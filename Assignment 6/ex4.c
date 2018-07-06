@@ -128,9 +128,6 @@
 
 
 
-    //fwrite(ad, sizeof(int),r*number, fp );
-    //fwrite(mu, sizeof(int),r*number, fp );
-    //fwrite(tr, sizeof(int),r*number, fp );
     fclose(fp);
 
 
