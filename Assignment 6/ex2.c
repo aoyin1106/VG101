@@ -51,6 +51,7 @@ void cartesian2polar (polar_t *p,cartesian_t *c, int n);
 
 
 int main() {
+
     polar_t *p = malloc(2 * sizeof(polar_t));
 
     *(p + 0) = (polar_t) {3.0, PI / 17.0};
@@ -85,41 +86,63 @@ int main() {
 
         if (i == SIZE) {
             printf("%.5lfe%.5lfi ", (p + 0)->r, (p + 0)->theta);
+
             printf("%.5lf", (e + 0)->x);
+
             if ((e + 0)->y >= 0) printf("+");
+
             printf("%.5lfi\n", (e + 0)->y);
 
             printf("%.5lf",(c + i)->x);
+
             if ((c + i)->y >= 0) {
+
                 printf("+");
+
                 printf("%.5lfi ", (c + i)->y); }
+
             else
+
                 printf("%.5lfi ", (c + i)->y);
 
             printf("%.5lfe%.5lfi\n", (d + i)->r, (d + i)->theta);
 
 
             printf("%.5lfe%.5lfi ", (p + 1)->r, (p + 1)->theta);
+
             printf("%.5lf", (e + 1)->x);
+
             if ((e + 1)->y >= 0) printf("+");
+
             printf("%.5lfi\n", (e + 1)->y);}
 
 
             if (i!=SIZE){
+
             printf("%.5lf",(c + i)->x);
+
             if ((c + i)->y >= 0) {
+
                 printf("+");
+
+                printf("%.5lfi ", (c + i)->y); }
+
+            else
+
                 printf("%.5lfi ", (c + i)->y);
-            } else {
-                printf("%.5lfi ", (c + i)->y);
-               }
+
                 printf("%.5lfe%.5lfi\n", (d + i)->r, (d + i)->theta);
             }
     }
+
     free(p);
+
     free(e);
+
     free(c);
+
     free(d);
+    
     return 0;
 }
 
