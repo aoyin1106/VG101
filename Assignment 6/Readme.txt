@@ -5,6 +5,10 @@ Contributers:
     Wang Tianyi	517370910160
     Liu Zhiyuan 517370910240
     Yuan Yin 	517370910260
+    
+
+Ex. 1 — Pointers, loops, and conditional statements
+
 
 Ex.2 - Arrays and functions
 
