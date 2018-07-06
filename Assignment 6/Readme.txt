@@ -1,4 +1,4 @@
-VG101 Assignment 6
+lyVG101 Assignment 6
 
 Contributers:
     Shi Li 	517370910032
@@ -9,6 +9,12 @@ Contributers:
 
 Ex. 1 — Pointers, loops, and conditional statements
 
+Input format:
+            an integer showing how many numbers are there and an array
+            
+Output format:
+            all the values in the array which are greater than the randomly generated number(which is smaller than the maximum number
+            of the arrays)
 
 Ex.2 - Arrays and functions
 
