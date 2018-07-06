@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include  <stdlib.h>
 #include <string.h>
+#include "assignment.h"
 
 
-int main() {
-    char str[1024];// str array
+ void ex4() {
+    char str[10000];// str array
 
     int len,number;//length of the string,the number of the numbers
 
@@ -16,9 +17,10 @@ int main() {
     
 
 
-    fgets(str,1024,fd);
+    fgets(str,10000,fd);
 
     len=strlen(str);//include the \n
+
 
     for (i=0;i<=(len);i++){
         if (str[i]==' '){
@@ -30,9 +32,10 @@ int main() {
 
     number=s+1;//get how many numbers are there in one row
 
+
     while (str[0]!='\n'){
         r=r+1; //find how many columns are there
-        fgets(str,1024,fd);
+        fgets(str,10000,fd);
     }
 
     int a[r][number];
@@ -62,17 +65,34 @@ int main() {
 
     int mu[r][number];//multiply
 
-    for (i=0;i<=r-1;i++){
-        for (j=0;j<=number-1;j++)
-            mu[i][j]=a[i][j]*b[i][j];
-    }
+     for (i=0;i<=number-1;i++)
+     {    for (j=0;j<=number-1;j++){
+         mu[i][j]=0;
+              for (int k=0;k<=number-1;k++){
+                  mu[i][j]=mu[i][j]+a[i][k]*b[k][j];
+              }
+     }
 
-    int tr[number][r];//transverse
 
-    for (i=0;i<=r-1;i++){
-        for (j=0;j<=number-1;j++)
-            tr[i][j]=a[j][i]+b[j][i];
-    }
+
+     }
+
+
+
+
+
+
+
+        int tr[number][r];//transverse
+
+     for (i=0;i<=number-1;i++) {
+         for (j = 0; j <= number - 1; j++) {
+             tr[i][j] = 0;
+             for (int k = 0; k <= number - 1; k++) {
+                 tr[i][j] = tr[i][j] + a[k][i] * b[j][k];
+             }
+         }
+     }
 
 
     FILE *fp=fopen("./result.txt","w");
@@ -114,5 +134,5 @@ int main() {
     fclose(fp);
 
 
-    return 0;
+
 }
