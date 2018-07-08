@@ -1,4 +1,4 @@
-lyVG101 Assignment 6
+﻿lyVG101 Assignment 6
 
 Contributers:
     Shi Li 	517370910032
@@ -15,6 +15,8 @@ Input format:
 Output format:
             all the values in the array which are greater than the randomly generated number(which is smaller than the maximum number
             of the arrays)
+
+
 
 Ex.2 - Arrays and functions
 
@@ -51,3 +53,13 @@ Output format:
              a txt file called "result.txt" with resulting matrices in the order addition, multiplication and transpose
 
 JOJ score: Accepted
+
+
+
+Ex.7 - Linked lists
+
+1."A linked list is a linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next." -Wikipedia "Linked list"
+  Application: easily remove some element or add some element at the beginning.
+  Linked list type: Singly linked list, Doubly linked list, Circular linked list...
+
+2.See ex7.c and list.h
