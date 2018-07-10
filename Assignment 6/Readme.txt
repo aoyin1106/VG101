@@ -99,7 +99,7 @@ Example input 2:
 Example output 2:
             Input a string: * Choose 1 to replace a character or 2 to delete a character:   Delete character: New string: goo morning
             
-JOJ score: #1 & #6 accepted
+JOJ score: #5,#9,#10 not accepted
 
      
      
