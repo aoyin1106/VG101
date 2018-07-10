@@ -11,7 +11,7 @@ Ex. 1 — Pointers, loops, and conditional statements
 
 Input format:
             an integer showing how many numbers are there and an array
-            
+          
 Output format:
             all the values in the array which are greater than the randomly generated number(which is smaller than the maximum number
             of the arrays)
@@ -56,7 +56,6 @@ JOJ score: Accepted
 
 
 
-
 Ex.4 - File I/O, arrays, and loops 
 
 Input format:
@@ -69,6 +68,8 @@ JOJ score: Accepted
 
 
 
+Ex.5 - Basic object oriented programming in C
+We failed to complete it...
 
 
 
@@ -101,9 +102,7 @@ Example output 2:
             
 JOJ score: #5,#9,#10 not accepted
 
-     
-     
-     
+
 
 Ex.7 - Linked lists
 
