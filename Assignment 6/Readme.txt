@@ -44,6 +44,19 @@ JOJ score: Accepted
 
 
 
+Ex.3 - Strings and file I/O
+
+Input format:
+            two txt files called "sentence.txt" and "word.txt" respectivelt
+            
+Output format:
+            a txt file called "count.txt"
+            
+JOJ score: Complied Error(Multiple definition of "main")
+
+
+
+
 Ex.4 - File I/O, arrays, and loops 
 
 Input format:
@@ -55,6 +68,42 @@ Output format:
 JOJ score: Accepted
 
 
+
+
+
+
+Ex.6 - Conditional statements, loops, pointers, ASCII code
+
+Input format:
+            three or four lines: 
+            a string on the first, a number on the second, and a character on the third and fourth line
+            (the length of the string is no more than 1,000,000)
+            
+Output format:
+            the prompts and one line with the result
+            
+Example input 1:
+            good morning
+            1
+             (a space here)
+            c
+            
+Example output 1:
+            Input a string: * Choose 1 to replace a character or 2 to delete a character:   Replace character:   with: New string: goodcmorning
+            
+Example input 2:
+            good morning
+            2
+            d
+            
+Example output 2:
+            Input a string: * Choose 1 to replace a character or 2 to delete a character:   Delete character: New string: goo morning
+            
+JOJ score: #1 & #6 accepted
+
+     
+     
+     
 
 Ex.7 - Linked lists
 
