@@ -52,7 +52,7 @@ Input format:
 Output format:
             a txt file called "count.txt"
             
-JOJ score: Complied Error(Multiple definition of "main")
+JOJ score: Accepted
 
 
 
